@@ -1,3 +1,4 @@
+// questions to the quiz
 var questions = [
     {
         title: "Who is the villain in 'Austin Powers'?",
