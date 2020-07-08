@@ -12,23 +12,45 @@
 
 <body>
     <!-- header to contain high score and timer -->
-    <header class="p-1" style="background-color: rgb(207, 219, 35);"><strong> <a href="highscores.html"> High
-            Scores</a></strong>
+    <header class="p-1" style="background-color: rgb(207, 219, 35);">
+        <strong>
+            <a href=""> High Scores</a>
+        </strong>
         <span id="timer" class="float-right mr-1">Time: 0</span>
     </header>
 
-    <!-- Home Screen -->
+    <!-- Home Screen Section -->
     <div class="container mt-5" id="home">
         <div class="row justify-content-center mt-5 pt-3 pb-3">
             <div class="col-10 col-lg-8 text-center">
                 <h1>Movie Quiz!</h1><br>
-                <h5><p>Try to answer these questions about movies in 75 seconds... <br></h5>
-                    <b><i>NOTE:</i> <br>
-                    </b>When you answer incorrectly you'll lose 15 seconds!</p> <br>
-                <button type="button" id="startBtn" class="btn btn-primary btn-lg">START QUIZ</button>
+                <h5>
+                    <p>Use your vast knowledge of movies to answer in 75 seconds... <br>
+                </h5>
+                <b><i>BE CAREFUL:</i> <br>
+                </b>When you answer incorrectly you'll lose 15 seconds!</p> <br>
+                <button type="button" id="startBtn" class="btn btn-primary btn-lg">BEGIN QUIZ</button>
             </div>
         </div>
     </div>
+
+    <!-- Questions & Answers Sections -->
+    <div class="container mt-5 d-none" id="quiz">
+        <div class="row justify-content-center mt-5 pt-3 pb-3">
+            <div class="col-10 col-lg-8" id="QA-block">
+                <h3 id="questions" class="mb-4">QUESTION</h3>
+                <ul id="answers" class="list-unstyled">
+                    <li class="answerChoice">A) </li>
+                    <li class="answerChoice">B) </li>
+                    <li class="answerChoice">C) </li>
+                    <li class="answerChoice">D) </li>
+                </ul>
+                <p class="feedback"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Post Quiz Section -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
