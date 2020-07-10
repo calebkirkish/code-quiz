@@ -14,7 +14,7 @@
     <!-- header to contain high score and timer -->
     <header class="p-1" style="background-color: rgb(207, 219, 35);">
         <strong>
-            <a href=""> High Scores</a>
+            <a href="highscores.html"> High Scores</a>
         </strong>
         <span id="timer" class="float-right mr-1">Time: 0</span>
     </header>
@@ -25,16 +25,16 @@
             <div class="col-10 col-lg-8 text-center">
                 <h1>Movie Quiz!</h1><br>
                 <h5>
-                    <p>Use your vast knowledge of movies to answer in 75 seconds... <br>
+                    <p>Use your vast knowledge of movies to answer in 90 seconds... <br>
                 </h5>
                 <b><i>BE CAREFUL:</i> <br>
                 </b>When you answer incorrectly you'll lose 15 seconds!</p> <br>
-                <button type="button" id="startBtn" class="btn btn-primary btn-lg">BEGIN QUIZ</button>
+                <button type="button" id="beginBtn" class="btn btn-primary btn-lg">BEGIN QUIZ</button>
             </div>
         </div>
     </div>
 
-    <!-- Questions & Answers Sections -->
+    <!-- Questions & Answers Section -->
     <div class="container mt-5 d-none" id="quiz">
         <div class="row justify-content-center mt-5 pt-3 pb-3">
             <div class="col-10 col-lg-8" id="QA-block">
@@ -50,7 +50,20 @@
         </div>
     </div>
 
-    <!-- Post Quiz Section -->
+    <!-- Enter Highscore Section -->
+    <div class="container mt-5 d-none" id="submit-score">
+        <div class="row justify-content-center mt-5 pt-3 pb-3">
+            <div class="col-10 col-lg-8">
+                <h2>Completed!</h2>
+                <p id="user-score"> </p>
+                <form class="form-group">
+                    <label for="new-score">Enter your name: </label>
+                    <input type="text" id="userName">
+                    <button type="button" class="btn btn-primary btn-sm submitBtn">Highscore</button>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -60,6 +73,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script src="assets/javascript/questions.js"></script>
+    <script src="assets/javascript/script.js"></script>
 </body>
 
 </html>
